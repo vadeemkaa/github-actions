@@ -18,6 +18,8 @@ jobs:
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.ANSIBLE_SSH_KEY }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_DEFAULT_OUTPUT: json
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
