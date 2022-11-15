@@ -35,3 +35,4 @@ jobs:
       - name: Verify AWS user
         run: |
           aws sts get-caller-identity
+          aws ec2 run-instances --image-id ami-08111162 --count 1 --instance-type t1.micro --security-groups default
